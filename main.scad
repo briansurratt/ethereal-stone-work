@@ -37,8 +37,3 @@ rotate([90,0,  0])
 rotate([0,90,  0])
 linear_extrude(cell_edge)
 transition_silhouette(trim_parameters);
-
-
-// resize([0,0, wall_thickness(wall_parameters)], auto=true)
-import("stls/socket.stl", convexity=10);
-import("stls/pin.stl", convexity=3);
